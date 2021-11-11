@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">DMIT2504ProjectSapanArora</string>
+    <string name="quiz_time">QUIZ TIME!</string>
+    <string name="please_enter_your_name">Please enter your name</string>
+    <string name="enter_the_name">Enter the name</string>
+    <string name="please_select_quiz_difficulty">Please select Quiz difficulty</string>
+    <string name="easy">Easy</string>
+    <string name="medium">Medium</string>
+    <string name="hard">Hard</string>
+    <string name="start_quiz">Start Quiz</string>
+    <string name="quiz_time_land">QUIZ TIME!</string>
+    <string name="please_enter_your_name_land">Please enter your name</string>
+    <string name="enter_the_name_land">Enter the name</string>
+    <string name="please_select_quiz_difficulty_land">Please select Quiz difficulty</string>
+    <string name="easy_land">Easy</string>
+    <string name="medium_land">Medium</string>
+    <string name="hard_land">Hard</string>
+    <string name="start_quiz_land">Start Quiz</string>
+    <string name="player_name">Player Name</string>
+    <string name="difficulty">Difficulty</string>
+    <string name="points">Points</string>
+    <string name="loading">Loading...</string>
+    <string name="player_name_land">Player Name</string>
+    <string name="difficulty_land">Difficulty</string>
+    <string name="points_land">Points</string>
+    <string name="loading_land">Loading...</string>
+    <string name="quiz_result">Quiz Result</string>
+    <string name="play_again">PLAY AGAIN</string>
+    <string name="quiz_result_land">Quiz Result</string>
+    <string name="play_again_land">PLAY AGAIN</string>
+    <string name="current_fragment">Current Fragment</string>
+    <string name="current_fragment_land">Current Fragment</string>
+    <string name="submit">Submit</string>
+    <string name="finish_quiz">Finish Quiz</string>
+    <string name="submit_land">Submit</string>
+    <string name="finish_quiz_land">Finish Quiz</string>
+</resources>

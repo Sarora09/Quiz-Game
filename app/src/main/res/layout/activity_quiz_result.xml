@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/activity_quiz_result_background_image"
+    android:gravity="center"
+    tools:context=".QuizResultActivity">
+
+    <TextView
+        android:id="@+id/activity_quiz_result_titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/activity_quiz_textview_background"
+        android:gravity="center_horizontal"
+        android:text="@string/quiz_result"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/white"
+        android:padding="8dp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:cardCornerRadius="25dp"
+        app:cardBackgroundColor="#1F6C66"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/activity_quiz_result_playerNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/activity_quiz_textview_background"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/white"
+                tools:text="Player Name: XYZ" />
+
+            <TextView
+                android:id="@+id/activity_quiz_result_difficultyTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/activity_quiz_textview_background"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/white"
+                tools:text="Game Difficulty" />
+
+            <TextView
+                android:id="@+id/activity_quiz_result_scoreTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/activity_quiz_textview_background"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/white"
+                tools:text="Score" />
+
+            <TextView
+                android:id="@+id/activity_quiz_result_feedbackTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/activity_quiz_textview_background"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/white"
+                tools:text="Status" />
+
+            <Button
+                android:id="@+id/activity_quiz_result_playAgainButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/play_again"
+                android:backgroundTint="#808"
+                android:onClick="onClickHandlerQuizResultActivity"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/activity_main_background_image"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/activity_main_quizTimeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/activity_main_textview_background"
+        android:gravity="center_horizontal"
+        android:text="@string/quiz_time_land"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/black"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" >
+
+            <TextView
+                android:id="@+id/activity_main_personNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_horizontal"
+                android:text="@string/please_enter_your_name_land"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/activity_main_personNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:padding="8dp"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:background="@drawable/activity_main_background_white"
+                android:autofillHints="Enter the name"
+                android:hint="@string/enter_the_name_land"/>
+
+            <TextView
+                android:id="@+id/activity_main_difficultyTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_horizontal"
+                android:text="@string/please_select_quiz_difficulty_land"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/white" />
+
+            <RadioGroup
+                android:id="@+id/activity_main_difficultyRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_horizontal"
+                android:background="@drawable/activity_main_background_white"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/activity_main_easyDifficultyRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/easy_land" />
+
+                <RadioButton
+                    android:id="@+id/activity_main_mediumDifficultyRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/medium_land" />
+
+                <RadioButton
+                    android:id="@+id/activity_main_hardDifficultyRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hard_land" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/activity_main_startQuizButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#808"
+                android:onClick="onClickHandler"
+                android:text="@string/start_quiz_land" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

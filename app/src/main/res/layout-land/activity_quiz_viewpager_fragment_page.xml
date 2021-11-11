@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/activity_quiz_viewPager_fragment_questionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:background="@drawable/activity_quiz_viewpager_textview_background"
+            android:textColor="#E7E6E3"
+            tools:text="Question" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/activity_quiz_viewPager_fragment_optionOneTextView"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_horizontal"
+                android:padding="2dp"
+                android:background="@drawable/activity_quiz_viewpager_textview_background"
+                android:textColor="#E7E6E3"
+                tools:text="Option One" />
+
+            <TextView
+                android:id="@+id/activity_quiz_viewPager_fragment_optionTwoTextView"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_horizontal"
+                android:padding="2dp"
+                android:background="@drawable/activity_quiz_viewpager_textview_background"
+                android:textColor="#E7E6E3"
+                tools:text="Option Two" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/activity_quiz_viewPager_fragment_optionThreeTextView"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_horizontal"
+                android:padding="2dp"
+                android:background="@drawable/activity_quiz_viewpager_textview_background"
+                android:textColor="#E7E6E3"
+                tools:text="Option Three" />
+
+            <TextView
+                android:id="@+id/activity_quiz_viewPager_fragment_optionFourTextView"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_horizontal"
+                android:padding="2dp"
+                android:background="@drawable/activity_quiz_viewpager_textview_background"
+                android:textColor="#E7E6E3"
+                tools:text="Option Four" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="25dp">
+
+            <Button
+                android:id="@+id/activity_quiz_viewPager_fragment_submitButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#808"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="80dp"
+                android:text="@string/submit_land" />
+
+            <Button
+                android:id="@+id/activity_quiz_viewPager_fragment_finishQuizButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#808"
+                android:visibility="gone"
+                android:layout_marginEnd="80dp"
+                android:text="@string/finish_quiz_land" />
+
+            <ProgressBar
+                android:id="@+id/activity_quiz_viewPager_fragment_progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:padding="5dp"
+                android:max="100"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="2dp"
+                android:indeterminate="false" />
+
+            <TextView
+                android:id="@+id/activity_quiz_viewPager_fragment_currentFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:padding="2dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/current_fragment_land" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
